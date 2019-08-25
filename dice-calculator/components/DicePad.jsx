@@ -46,21 +46,22 @@ export default function DicePad({
     onLongClick
   });
 
-  const hotkeyMap = useMemo(() => {
-    return createHotkeyMap({ dicePad });
-  }, [dicePad]);
+  // Hotkeys not done yet, causing too much trouble for now.
+  // const hotkeyMap = useMemo(() => {
+  //   return createHotkeyMap({ dicePad });
+  // }, [dicePad]);
 
-  useEffect(() => {
-    function onKeyUp({ key }) {
-      const button = hotkeyMap[key];
-      if (button) {
-        onClick(button);
-      }
-    }
+  // useEffect(() => {
+  //   function onKeyUp({ key }) {
+  //     const button = hotkeyMap[key];
+  //     if (button) {
+  //       onClick(button);
+  //     }
+  //   }
 
-    document.addEventListener('keyup', onKeyUp);
-    return () => document.removeEventListener('keyup', onKeyUp);
-  });
+  //   document.addEventListener('keyup', onKeyUp);
+  //   return () => document.removeEventListener('keyup', onKeyUp);
+  // });
 
   return (
     <Tag className="DicePad">

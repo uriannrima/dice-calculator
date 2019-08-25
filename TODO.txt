@@ -1,2 +1,4 @@
-1) Separate Wildcard logic from the Dice.
-2) Add results history below the calculator.
+1) Add confirmation window while deleting a saved formula.
+2) Add more description at history when rolling a saved formula.
+3) Perfomance with useMemo, useCallback and maybe useReducer.
+4) Hotkeys (0-9,d, enter, backspace) were working, but useEffect was being run multiple times.
