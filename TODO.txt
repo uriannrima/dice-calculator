@@ -1,0 +1,2 @@
+1) Separate Wildcard logic from the Dice.
+2) Add results history below the calculator.
